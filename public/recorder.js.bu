@@ -18,6 +18,7 @@
 
     window.startRecording = function() {
       recording = true;
+//    window.Stream = client.createStream(); 
     }
 
     window.stopRecording = function() {
@@ -49,7 +50,7 @@
     function convertoFloat32ToInt16(buffer) {
       var l = buffer.length;
       var buf = new Int16Array(l)
-      console.log (buffer);
+
       while (l--) {
         buf[l] = buffer[l]*0xFFFF;    //convert to 16 bit
       }
