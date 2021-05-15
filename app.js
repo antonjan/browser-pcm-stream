@@ -46,5 +46,6 @@ binaryServer.on('connection', function(client) {
 const speaker = new Speaker({
   channels: 1,          // 2 channels
   bitDepth: 16,         // 16-bit samples
-  sampleRate: 48000     // 44,100 Hz sample rate
+  sampleRate: 48000,     // 44,100 Hz sample rate
+  device: 'default'	//device - The name of the playback device. E.g. 'hw:0,0' or 'default'
 });
