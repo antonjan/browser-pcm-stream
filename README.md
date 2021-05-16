@@ -9,7 +9,12 @@ This application only works on localhost to localhost.
     sudo apt-get install libasound2-dev
     sudo curl https://www.npmjs.com/install.sh | sudo sh
     npm install express --save
-    npm install speaker --save
+    npm install speaker --saveopenssl genrsa -out key.pem
+    openssl req -new -key key.pem -out csr.pem
+    openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+    rm csr.pem
+
+    
 
 
 To start run:
