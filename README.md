@@ -5,9 +5,10 @@ I am using the Speaker libraty to send the audio from server to the sound card
 You can define the ALSA interface.<br>
 device - The name of the playback device. E.g. 'hw:0,0' for first device of first sound card or 'hw:1,0' for first device of second sound card. Defaults to null which will pick the default device.
 ## Dependincy
-sudo curl https://www.npmjs.com/install.sh | sudo sh<br>
-npm install express --save
-npm install Speaker
+    sudo apt-get install libasound2-dev<br>
+    sudo curl https://www.npmjs.com/install.sh | sudo sh<br>
+    npm install express --save<br>
+    npm install Speaker --save<br>
 
 
 To start run:
