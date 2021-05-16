@@ -27,4 +27,4 @@ To start run:
     node app.js
 
 Then go to `http://localhost:3700` and make a recording. It should create a wav file in your project's folder.
-The https server will run on http://local_ip_not_localhost:8000 for you to be able to connect via remote desktop browser.
+The https server will run on `http://local_ip_not_localhost:8000` for you to be able to connect via remote desktop browser.
