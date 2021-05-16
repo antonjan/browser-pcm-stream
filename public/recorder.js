@@ -1,5 +1,7 @@
 (function(window) {
-  var client = new BinaryClient('ws://localhost:9001');
+var client = new BinaryClient('ws://192.168.10.154:9001');
+//192.168.10.154
+//  var client = new BinaryClient('ws://localhost:9001');
 
   client.on('open', function() {
     window.Stream = client.createStream();
