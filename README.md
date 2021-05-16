@@ -5,11 +5,14 @@ This a bransh will allow for the Js server to send the audio to the ALSA sound c
 ## Project Status
 For now it only works on local host I am am bussy adding the https server as the API only alow remote ip mic streaming if the server is HTTPS.<br>
 ## Description
-I am using the Speaker libraty to send the audio from server to the sound card.<br>
+I am using the Speaker library to send the audio from server to the sound card using ALSA.<br>
 You can define the ALSA interface.<br>
-device - The name of the playback device. E.g. 'hw:0,0' for first device of first sound card or 'hw:1,0' for first device of second sound card. Defaults to null which will pick the default device.<br>
-This application only works on localhost to localhost.
+device - The name of the playback device.<br> 
+E.g. 'hw:0,0' for first device of first sound card or 'hw:1,0' for first device of second sound card.<br> 
+Defaults to null which will pick the default audio device.<br>
+This application only works on localhost to localhost forn now. until I have the https server working.
 ## Dependency
+The following needs be be run in the browser-pcm-stream directory
     sudo apt-get install libasound2-dev
     sudo curl https://www.npmjs.com/install.sh | sudo sh
     npm install express --save
@@ -18,11 +21,9 @@ This application only works on localhost to localhost.
     openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
     rm csr.pem
 
-    
-
-
 To start run:
 
     node app.js
 
 Then go to `http://localhost:3700` and make a recording. It should create a wav file in your project's folder.
+The https server will run on http://local_ip_not_localhost:8000 for you to be able to connect via remote desktop browser.
