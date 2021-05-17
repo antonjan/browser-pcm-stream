@@ -15,7 +15,11 @@ This application only works on localhost to localhost for now. Until I have the 
 The following needs be be run in the browser-pcm-stream directory.<br>
 You will need to get the binaryjs.js from https://github.com/binaryjs/binaryjs/tree/master/dist
 
+    git clone git://github.com/binaryjs/binaryjs.git
+    cd binaryjs
+    npm install -g
     sudo apt-get install libasound2-dev
+    cd browser-pcm-stream
     sudo curl https://www.npmjs.com/install.sh | sudo sh
     npm install express --save
     npm install speaker --saveopenssl genrsa -out key.pem
