@@ -1,4 +1,5 @@
 var express = require('express');
+//var BinaryServer = require('binaryjs').BinaryServer;
 var BinaryServer = require('binaryjs').BinaryServer;
 //var fs = require('fs');
 var wav = require('wav');
@@ -34,7 +35,7 @@ https.createServer('/', function(req, res) {
 
 console.log('server open on port ' + port);
 
-binaryServer = BinaryServer({port: 9001});
+binaryServer = BinaryServer({server: httpsServer,port: 9001});
 
 binaryServer.on('connection', function(client) {
   console.log('new connection');

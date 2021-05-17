@@ -4,7 +4,7 @@ var fs = require('fs');
 var wav = require('wav');
 
 var port = 3700;
-var outFile = 'demo.wav';
+//var outFile = 'demo.wav';
 var app = express();
 const Speaker = require('speaker');
 app.set('views', __dirname + '/tpl');
