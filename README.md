@@ -14,6 +14,7 @@ This application only works on localhost to localhost for now. Until I have the 
 ## Dependency
 The following needs be be run in the browser-pcm-stream directory.<br>
 You will need to get the binaryjs.js from https://github.com/binaryjs/binaryjs/tree/master/dist
+You will need binaryjs vertion 2.2 se details here https://github.com/binaryjs/binaryjs/issues/113
 
     git clone git://github.com/binaryjs/binaryjs.git
     cd binaryjs
