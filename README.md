@@ -26,7 +26,10 @@ You will need to get the binaryjs.js from https://github.com/binaryjs/binaryjs/t
     openssl req -new -key key.pem -out csr.pem
     openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
     rm csr.pem
-
+ Check that you have versio 7.12.2 of binaryjs
+ 
+    npm -v binaryjs
+    7.12.2 if you have 7.12.1 it will not work!!!
 To start run:
 
     node app.js
