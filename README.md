@@ -13,7 +13,7 @@ Defaults to null which will pick the default audio device.<br>
 This application only works on localhost to localhost for now. Until I have the https server working.
 ## Dependency
 The following needs be be run in the browser-pcm-stream directory.
-
+You will need to get the binaryjs.js from https://github.com/binaryjs/binaryjs/tree/master/dist
     sudo apt-get install libasound2-dev
     sudo curl https://www.npmjs.com/install.sh | sudo sh
     npm install express --save
